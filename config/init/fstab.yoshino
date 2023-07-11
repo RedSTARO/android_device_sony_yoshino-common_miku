@@ -17,5 +17,5 @@
 /dev/block/bootdevice/by-name/modemst2     /boot/modem_fs2    emmc    defaults                                                defaults
 
 /devices/soc/a800000.ssusb/a800000.dwc3/xhci-hcd.0.auto/usb*  auto         auto    defaults                                  voldmanaged=usb:auto
-/devices/soc/c0a4900.sdhci/mmc_host*       /storage/mmc_host*              auto    defaults                                               voldmanaged=sdcard1:auto,encryptable=userdata
+/devices/soc/c0a4900.sdhci/mmc_host*       /storage/mmc_host*              auto    defaults                                  voldmanaged=sdcard1:auto,encryptable=userdata
 /dev/block/zram0                           none         swap    defaults                                  zramsize=25%
