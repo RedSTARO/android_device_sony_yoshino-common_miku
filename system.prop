@@ -95,10 +95,10 @@ persist.keyprovd.fido.version=0
 media.settings.xml=/vendor/etc/media_profiles_vendor.xml
 
 ### NFC
-ro.nfc.on.default=false
-ro.nfc.port=I2C
-ro.nfc.se.sim.enable=true
-ro.nfc.se.smx.enable=false
+# ro.nfc.on.default=false
+# ro.nfc.port=I2C
+# ro.nfc.se.sim.enable=true
+# ro.nfc.se.smx.enable=false
 
 ### RADIO
 # CNE

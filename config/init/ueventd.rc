@@ -282,7 +282,7 @@ firmware_directories /vendor/firmware_mnt/image/
 /sys/devices/virtual/net/bond0 queues/rx-0/rps_cpus 0660 system system
 
 # NFC
-/dev/pn553                 0660    nfc         nfc
+# /dev/pn553                 0660    nfc         nfc
 
 # LED
 /sys/devices/soc/800f000.qcom,spmi/spmi-0/spmi0-03/800f000.qcom,spmi:qcom,pmi8998@3:qcom,leds@d000/leds/led:* max_brightness 0664 system system
