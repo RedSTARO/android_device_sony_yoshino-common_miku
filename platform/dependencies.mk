@@ -92,7 +92,7 @@ PRODUCT_PACKAGES += \
     libjson \
     libion \
     libminijail \
-    libstdc++_vendor \
+    libstdc++.vendor \
     libtinyxml \
     libxml2
 
