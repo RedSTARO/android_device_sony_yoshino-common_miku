@@ -199,6 +199,9 @@ PRODUCT_PACKAGES += \
     android.hardware.vibrator@1.0-impl:64 \
     android.hardware.vibrator@1.0-service
 
+# Vibrator
+$(call soong_config_set, vibrator, vibratortargets, vibratoraidlV2target)
+
 # VR
 PRODUCT_PACKAGES += \
     android.hardware.vr@1.0-impl:64 \
