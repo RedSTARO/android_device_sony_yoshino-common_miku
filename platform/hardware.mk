@@ -227,7 +227,8 @@ PRODUCT_PACKAGES += \
     wificond \
     WifiOverlay \
     wpa_supplicant \
-    wpa_supplicant.conf
+    wpa_supplicant.conf \
+    libcld80211 
 
 ### XPERIAPARTS
 PRODUCT_PACKAGES += \
