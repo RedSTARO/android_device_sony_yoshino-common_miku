@@ -90,7 +90,9 @@ PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.4-impl:32 \
     camera.device@3.2-impl:32 \
     vendor.qti.hardware.camera.device@1.0 \
-    vendor.qti.hardware.camera.device@1.0.vendor
+    vendor.qti.hardware.camera.device@1.0.vendor \
+    android.frameworks.sensorservice@1.0 \
+    android.frameworks.sensorservice@1.0.vendor \
 
 # CONFIGSTORE
 PRODUCT_PACKAGES += \
@@ -197,6 +199,9 @@ PRODUCT_PACKAGES += \
     android.hardware.vibrator@1.0-impl:64 \
     android.hardware.vibrator@1.0-service
 
+# Vibrator
+$(call soong_config_set, vibrator, vibratortargets, vibratoraidlV2target)
+
 # VR
 PRODUCT_PACKAGES += \
     android.hardware.vr@1.0-impl:64 \
@@ -209,6 +214,8 @@ PRODUCT_PACKAGES += \
 # WIFI
 PRODUCT_PACKAGES += \
     android.hardware.wifi \
+    android.hardware.wifi@1.0 \
+    android.hardware.wifi.hostapd@1.0.vendor
 
 ### TETHERING
 PRODUCT_PACKAGES += \
@@ -225,7 +232,8 @@ PRODUCT_PACKAGES += \
     wificond \
     WifiOverlay \
     wpa_supplicant \
-    wpa_supplicant.conf
+    wpa_supplicant.conf \
+    libcld80211 
 
 ### XPERIAPARTS
 PRODUCT_PACKAGES += \
