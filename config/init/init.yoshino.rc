@@ -82,6 +82,10 @@ on fs
     chown oem_2985 oem_2985 /sys/class/qns/voltage
     chown oem_2985 oem_2985 /sys/class/qns/battery_type
 
+    # Setup owner and permissions of TA for tad
+    chown oem_2997 oem_2997 /dev/block/sda1
+    chmod 0770 /dev/block/sda1
+    
 on post-fs
     # Start qseecomd for vold
     start vendor.qseecomd
