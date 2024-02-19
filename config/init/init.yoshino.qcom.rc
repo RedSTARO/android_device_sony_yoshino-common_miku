@@ -24,9 +24,6 @@ on post-fs-data
     #Create folder of camera
     mkdir /data/vendor/camera 0770 camera camera
 
-    mkdir /data/media 0770 media_rw media_rw
-    chown media_rw media_rw /data/media
-
     # Create directory for tftp
     mkdir /data/vendor/tombstones 0771 system system
 
@@ -107,9 +104,6 @@ on post-fs-data
     mkdir /data/fota 0771
     chown system system /data/fota
 
-    # Create directory for hostapd
-    mkdir /data/hostapd 0770 system wifi
-
     # Create /data/vendor/time folder for time-services
     mkdir /data/vendor/time/ 0700 system system
 
@@ -140,9 +134,6 @@ on post-fs-data
 
     # Create vpp directory
     mkdir /data/vendor/vpp 0770 media media
-
-    # Create FTM_AP dir for factory test
-    mkdir /data/FTM_AP 0775 system system
 
     #Create dir for TUI
     mkdir /data/vendor/tui 0600 system drmrpc

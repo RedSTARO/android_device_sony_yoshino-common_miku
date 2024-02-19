@@ -29,8 +29,6 @@ QCOM_SOONG_NAMESPACE := $(PLATFORM_PATH)/hardware/qcom-caf
 ### APEX
 # Enable updating of APEXes
 $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
-# Disable APEX compression
-PRODUCT_COMPRESSED_APEX := false
 
 ### DALVIK
 $(call inherit-product, frameworks/native/build/phone-xhdpi-4096-dalvik-heap.mk)
@@ -59,10 +57,3 @@ TARGET_USE_CUSTOM_POWERHINT ?= false
 
 ### RECOVERY
 include $(PLATFORM_PATH)/platform/*.mk
-
-### VERITY
-ifeq ($(WITH_VERITY),true)
-PRODUCT_SYSTEM_VERITY_PARTITION := /dev/block/platform/soc/1da4000.ufshc/by-name/system
-PRODUCT_VENDOR_VERITY_PARTITION := /dev/block/platform/soc/1da4000.ufshc/by-name/vendor
-$(call inherit-product, build/target/product/verity.mk)
-endif
