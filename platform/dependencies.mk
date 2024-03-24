@@ -22,13 +22,13 @@ PRODUCT_PACKAGES += \
     libtinycompress \
     tinymix
 
-# # Audio effects
-# PRODUCT_PACKAGES += \
-#     libqcomvisualizer \
-#     libqcomvoiceprocessing \
-#     libqcomvoiceprocessingdescriptors \
-#     libqcompostprocbundle \
-#     libvolumelistener
+# Audio effects
+PRODUCT_PACKAGES += \
+    libqcomvisualizer \
+    libqcomvoiceprocessing \
+    libqcomvoiceprocessingdescriptors \
+    libqcompostprocbundle \
+    libvolumelistener
 
 ### HIDL
 PRODUCT_PACKAGES += \
@@ -58,19 +58,19 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     librmnetctl
 
-# ### OMX
-# PRODUCT_PACKAGES += \
-#     libOmxAacEnc \
-#     libOmxAmrEnc \
-#     libOmxCore \
-#     libOmxEvrcEnc \
-#     libOmxG711Enc \
-#     libOmxQcelp13Enc \
-#     libOmxVdec \
-#     libOmxVenc \
-#     libc2dcolorconvert \
-#     libmm-omxcore \
-#     libstagefrighthw
+### OMX
+PRODUCT_PACKAGES += \
+    libOmxAacEnc \
+    libOmxAmrEnc \
+    libOmxCore \
+    libOmxEvrcEnc \
+    libOmxG711Enc \
+    libOmxQcelp13Enc \
+    libOmxVdec \
+    libOmxVenc \
+    libc2dcolorconvert \
+    libmm-omxcore \
+    libstagefrighthw
 
 # PROTOBUF
 PRODUCT_PACKAGES += \
