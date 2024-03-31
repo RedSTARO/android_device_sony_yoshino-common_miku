@@ -127,7 +127,7 @@ public class NetworkSwitcher extends Service {
         if (isLTE(getPreferredNetwork(tm))) {
             toggle(tm);
 
-            if (StorageManager.isFileEncryptedNativeOrEmulated() && unlockObserver != null) {
+            if (StorageManager.isFileEncrypted() && unlockObserver != null) {
                 // Delay resetting the network until phone is unlocked.
                 // The current unlock observer is no longer required
                 unregisterReceiver(unlockObserver);
